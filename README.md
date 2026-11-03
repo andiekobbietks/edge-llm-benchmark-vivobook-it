@@ -6,6 +6,13 @@ Questo documento descrive una misurazione reale di throughput di un modello ling
 
 La risposta, misurata e non stimata, è più articolata di quanto si potesse prevedere.
 
+## Manuale in PDF
+
+Il rapporto completo è anche un manuale impaginato per la lettura su Kindle e per la stampa: formato 6x9 pollici, corpo 12 pt in Atkinson Hyperlegible, codice in Consolas su sfondo chiaro con numeri di riga, figure con didascalia, note e segnalibri PDF per ogni sezione.
+
+- File: [`edge_llm_benchmark_handbook_it.pdf`](edge_llm_benchmark_handbook_it.pdf) (15 pagine)
+- Contiene: metodologia, risultati, analisi, comandi di riproduzione, script completi, versioni dei pacchetti.
+
 ## Hardware e ambiente
 
 | Componente | Specifica |
@@ -63,18 +70,6 @@ Il modello "ottimizzato per NPU" funziona su CPU qui. La NPU richiede Intel Core
 **6. Raccomandazione pratica per questa classe di hardware:**
 
 OpenVINO int4 su CPU (40 tok/s, 0.64 GB, 8 thread). Non forzare l'offload GPU.
-
-## Budget RAM e tab del browser
-
-Con il modello caricato e Chrome chiuso: 2.23 GB liberi su 7.89 GB totali.
-
-| Tipo di tab | Dimensione media | Tab disponibili |
-|---|---|---|
-| Leggere (testo, documenti) | ~100 MB | ~14 |
-| Medie (news, blog) | ~150 MB | ~9 |
-| Pesanti (YouTube, web app) | ~300 MB | ~4 |
-
-Il modello occupa ~0.64 GB fissi mentre gira. Con Chrome aperto (~1.7 GB), i tab Firefox disponibili si riducono drasticamente.
 
 ## Budget RAM e tab del browser
 
