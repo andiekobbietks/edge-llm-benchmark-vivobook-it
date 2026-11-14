@@ -141,3 +141,10 @@ Note di ricerca e dati di benchmark: MIT. Licenze dei modelli: vedi LiquidAI LFM
 - Issue upstream: https://github.com/huggingface/optimum-intel/issues/2102
 - Modello: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Modello OpenVINO: https://huggingface.co/OpenVINO/LFM2.5-1.2B-Instruct-int4-gq-ov
+
+## Progetti correlati
+
+- Weight-Space Programming: https://github.com/andiekobbietks/weight-space-programming
+- ESP32 + Cisco OT/IT Bridge: https://github.com/andiekobbietks/esp32-cisco-ot-bridge
+- AI Hype Auditing: https://github.com/andiekobbietks/ai-hype-auditing
+- Portfolio ricerca: https://github.com/andiekobbietks/sovereign-edge-ai-research
