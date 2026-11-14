@@ -6,6 +6,14 @@ Questo documento descrive una misurazione reale di throughput di un modello ling
 
 La risposta, misurata e non stimata, è più articolata di quanto si potesse prevedere.
 
+## Origine
+
+Questo benchmark nasce da un'affermazione specifica: "LFM2.5-1.2B gira a 40-70 token al secondo su un Intel i5-1135G7 con Iris Xe via Vulkan, out-of-the-box." L'affermazione era non verificata. La maggior parte dei benchmark di LLM su edge usa GPU dedicate o CPU di fascia alta con 32 GB di RAM. Questo lavoro testa lo scenario realistico: un portatile di 5 anni, 8 GB, grafica integrata.
+
+Il risultato principale, che la CPU (AVX2/OpenVINO) batte la GPU integrata di 2,7 volte su un modello da 1,2 miliardi di parametri, è controintuitivo e raramente documentato con numeri. Il benchmark ha anche scoperto un crash in optimum-cli export openvino (access violation 0xC0000005), documentato come issue upstream #2102 su huggingface/optimum-intel.
+
+La metodologia, tutti i comandi e tutte le misurazioni sono inclusi perché chiunque possa ripetere i risultati sulla propria macchina.
+
 ## Manuale in PDF
 
 Il rapporto completo è anche un manuale impaginato per la lettura su Kindle e per la stampa: formato 6x9 pollici, corpo 12 pt in Atkinson Hyperlegible, codice in Consolas su sfondo chiaro con numeri di riga, figure con didascalia, note e segnalibri PDF per ogni sezione.
